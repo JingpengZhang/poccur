@@ -13,6 +13,9 @@ export default <Partial<Config>>{
       fontFamily: {
         noto: ["NotoSans"],
       },
+      colors: {
+        primary: "#007aff",
+      },
     },
     fontWeight: {
       thin: "100",

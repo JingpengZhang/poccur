@@ -16,7 +16,7 @@
         <li v-for="item in menu" :key="item.id" class="mb-2 last-of-type:mb-0">
           <NuxtLink
             :href="item.path"
-            class="flex items-center h-9 p-4 rounded bg-transparent hover:bg-gray-100 hover:text-blue-600"
+            class="flex items-center h-9 p-4 rounded bg-transparent hover:bg-gray-100 hover:text-primary"
           >
             <Icon size="18" :name="item.icon" />
             <span class="ml-2 text-sm">{{ item.name }}</span>
@@ -26,7 +26,7 @@
     </div>
 
     <!-- 分类列表 -->
-    <div class="mt-5 w-9/12 pb-5 border-b-0">
+    <div class="mt-5 w-9/12 pb-5 border-b mb-5">
       <p class="p-4 h-9 mb-2 flex items-center font-regular text-sm">
         文章分类
       </p>
@@ -38,7 +38,7 @@
         >
           <NuxtLink
             :href="item.name"
-            class="flex items-center h-9 p-4 rounded bg-transparent hover:bg-gray-100 hover:text-blue-600"
+            class="flex items-center h-9 p-4 rounded bg-transparent hover:bg-gray-100 hover:text-primary"
           >
             <Icon size="18" :name="item.icon" />
             <span class="ml-2 text-sm">{{ item.name }}</span>
@@ -46,6 +46,8 @@
         </li>
       </ul>
     </div>
+    
+    <SiteFooter class="w-9/12"/>
   </section>
 </template>
 

@@ -15,7 +15,7 @@ const menu = [
   },
   {
     id: 3,
-    name: "关于我",
+    name: "关于",
     icon: "simple-icons:aboutdotme",
     path: "/",
     slug: "about",
