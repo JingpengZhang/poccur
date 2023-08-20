@@ -39,4 +39,8 @@
     font-weight: 900;
     font-display: swap;
   }
+
+  body{
+    @apply font-noto font-light;
+  }
 }
