@@ -26,6 +26,7 @@
     <div class="flex items-center">
       <NuxtLink
         :href="baseInfo.social?.github"
+        target='_blank'
         class="h-9 aspect-square flex items-center justify-center"
       >
         <Icon name="mdi:github" size="24" />
