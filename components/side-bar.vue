@@ -32,7 +32,7 @@
       </p>
       <ul class="">
         <li
-          v-for="item in quickCategories"
+          v-for="item in categories"
           :key="item.id"
           class="mb-2 last-of-type:mb-0"
         >
@@ -52,6 +52,6 @@
 </template>
 
 <script setup lang="ts">
-import quickCategories from "~/config/quickCategories";
+import categories from "~/config/categories";
 import menu from "~/config/menu";
 </script>
