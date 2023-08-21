@@ -1,5 +1,5 @@
 <template>
-  <ContentList :path="props.category">
+  <ContentList :path="`/blog/${props.category}`">
     <template class="w-full flex flex-wrap justify-between" v-slot="{ list }">
       <div v-for="item in list" class="w-full h-48 mb-5">
         <ArticleItem :data="item" />
@@ -16,6 +16,6 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  category: string;
+  category?: string;
 }>();
 </script>

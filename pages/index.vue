@@ -1,5 +1,5 @@
 <template>
-  <ArticleListWithCategory category="/"/>
+  <ArticleListWithCategory/>
 </template>
 
 <script setup lang="ts"></script>
