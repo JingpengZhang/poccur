@@ -3,12 +3,12 @@
     class="w-full h-full rounded overflow-hidden p-3 flex bg-white relative border border-[#f5f5f5]"
   >
     <!-- 分类 -->
-    <NuxtLink
-      href="/"
+    <button
+      @click="handleClickCategory"
       class="absolute text-xs top-0 right-0 py-1 px-2 bg-primary text-white rounded-bl"
     >
       <span>{{ props.data.category }}</span>
-    </NuxtLink>
+    </button>
     <!-- 封面 -->
     <NuxtLink
       href="/"
@@ -40,8 +40,16 @@
 </template>
 
 <script setup lang="ts">
+import { ParsedContent } from '@nuxt/content/dist/runtime/types';
 
 const props = defineProps<{
-  data:IArticleItem
+  data: ParsedContent;
 }>();
+
+const router = useRouter();
+
+const handleClickCategory = () => {
+  const slug = utils.getCategorySlugByName(props.data.category);
+  if (slug) router.push(`/category/${slug}`);
+};
 </script>

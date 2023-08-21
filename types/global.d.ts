@@ -2,6 +2,6 @@ interface IArticleItem {
   title: string;
   description: string;
   cover: string;
-  category: string;
+  category: string
   createtime: string;
 }

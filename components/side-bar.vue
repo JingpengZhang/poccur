@@ -5,9 +5,9 @@
       <div
         class="flex items-center mr-3 justify-center bg-zinc-100 h-12 rounded-md aspect-square"
       >
-        <Icon name="🧢" size="26" />
+        <Icon :name="baseInfo.website.logo" :size="baseInfo.website.logoSize" />
       </div>
-      <span class="font-regular text-lg text-text-600">PoccurNotes</span>
+      <span class="font-regular text-lg text-text-600">{{ baseInfo.website.name }}</span>
     </NuxtLink>
 
     <!-- 导航 -->
@@ -54,4 +54,5 @@
 <script setup lang="ts">
 import categories from "~/config/categories";
 import menu from "~/config/menu";
+import baseInfo from '~/config/baseInfo'
 </script>
