@@ -11,7 +11,7 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       fontFamily: {
-        noto: ["NotoSans"],
+        mainFont: ["GlowSansSC"],
       },
       colors: {
         primary: "#007aff",
@@ -25,5 +25,5 @@ export default <Partial<Config>>{
       bold: "700",
       black: "900",
     },
-  },
+  }
 };
