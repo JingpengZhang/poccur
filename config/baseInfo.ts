@@ -14,7 +14,7 @@ interface IBaseInfo {
 const baseInfo: IBaseInfo = {
   website: {
     name: "PoccurNotes",
-    logo: "🧢",
+    logo: "💻",
     logoSize: '26',
   },
   social: {

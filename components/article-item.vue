@@ -11,7 +11,7 @@
     </button>
     <!-- 封面 -->
     <NuxtLink
-      href="/"
+      :href="`/blog/${props.data.slug}`"
       class="h-full aspect-[16/9] rounded overflow-hidden mr-5 group"
     >
       <img
@@ -21,7 +21,7 @@
     </NuxtLink>
 
     <div class="flex flex-col justify-between">
-      <NuxtLink href="/" class="group">
+      <NuxtLink :href="`/blog/${props.data.slug}`" class="group">
         <p class="font-medium line-clamp-1 group-hover:text-primary transition">
           {{ props.data.title }}
         </p>
@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import { ParsedContent } from '@nuxt/content/dist/runtime/types';
+import { ParsedContent } from "@nuxt/content/dist/runtime/types";
 
 const props = defineProps<{
   data: ParsedContent;

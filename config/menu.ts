@@ -10,14 +10,14 @@ const menu = [
     id: 2,
     name: "分类",
     icon: "mingcute:classify-2-line",
-    path: "/",
-    slug: "index",
+    path: "/categories",
+    slug: "categories",
   },
   {
     id: 3,
     name: "关于",
     icon: "simple-icons:aboutdotme",
-    path: "/",
+    path: "/about",
     slug: "about",
   },
 ];

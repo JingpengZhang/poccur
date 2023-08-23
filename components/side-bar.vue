@@ -12,11 +12,12 @@
 
     <!-- 导航 -->
     <div class="w-9/12 mt-10 border-b pb-5">
-      <ul cla🧢🧢ss="">
+      <ul class="">
         <li v-for="item in menu" :key="item.id" class="mb-2 last-of-type:mb-0">
           <NuxtLink
             :href="item.path"
-            class="flex items-center h-9 p-4 rounded bg-transparent hover:bg-gray-100 hover:text-primary"
+            class="flex items-center h-9 p-4 rounded  hover:bg-gray-100 hover:text-primary"
+            :class="route.path === item.path ? ' text-primary':''"
           >
             <Icon size="18" :name="item.icon" />
             <span class="ml-2 text-sm">{{ item.name }}</span>
@@ -37,8 +38,9 @@
           class="mb-2 last-of-type:mb-0"
         >
           <NuxtLink
-            :href="item.name"
+            :href="`/category/${item.slug}`"
             class="flex items-center h-9 p-4 rounded bg-transparent hover:bg-gray-100 hover:text-primary"
+            :class="route.path === `/category/${item.slug}` ? ' text-primary' : ''"
           >
             <Icon size="18" :name="item.icon" />
             <span class="ml-2 text-sm">{{ item.name }}</span>
@@ -55,4 +57,6 @@
 import categories from "~/config/categories";
 import menu from "~/config/menu";
 import baseInfo from '~/config/baseInfo'
+
+const route = useRoute();
 </script>
