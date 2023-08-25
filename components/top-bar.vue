@@ -40,25 +40,27 @@
 <script setup lang="ts">
 import baseInfo from "~/config/baseInfo";
 
-const searchVal = ref("");
+// const searchVal = ref("");
 
 const router = useRouter();
 
-const handleSearch = () => {
-  router.push(`/search/${searchVal.value}`);
-};
+// const handleSearch = () => {
+//   router.push(`/search/${searchVal.value}`);
+// };
 
-const isSearchInputFocus = ref(false);
+// const isSearchInputFocus = ref(false);
 
-onMounted(() => {
-  window.addEventListener("keydown", (e) => {
-    if (
-      e.key === "Enter" &&
-      isSearchInputFocus.value &&
-      searchVal.value !== ""
-    ) {
-      handleSearch();
-    }
-  });
-});
+// onMounted(() => {
+//   if (process.client) {
+//     window.addEventListener("keydown", (e) => {
+//       if (
+//         e.key === "Enter" &&
+//         isSearchInputFocus.value &&
+//         searchVal.value !== ""
+//       ) {
+//         handleSearch();
+//       }
+//     });
+//   }
+// });
 </script>
