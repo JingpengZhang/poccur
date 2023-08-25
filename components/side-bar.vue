@@ -5,7 +5,8 @@
       <div
         class="flex items-center mr-3 justify-center bg-zinc-100 h-12 rounded-md aspect-square"
       >
-        <Icon :name="baseInfo.website.logo" :size="baseInfo.website.logoSize" />
+        <!-- <Icon :name="baseInfo.website.logo" :size="baseInfo.website.logoSize" /> -->
+        <img src="/logo.png"/>
       </div>
       <span class="font-regular text-lg text-text-600">{{ baseInfo.website.name }}</span>
     </NuxtLink>

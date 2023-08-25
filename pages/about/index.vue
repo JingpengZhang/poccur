@@ -2,4 +2,9 @@
   <span>About</span>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title:'Poccur | 关于'
+})
+
+</script>
