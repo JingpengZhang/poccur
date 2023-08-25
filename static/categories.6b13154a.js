@@ -1,0 +1,1 @@
+const e=[{id:1,name:"JavaScript",icon:"ion:social-javascript-outline",slug:"javascript"},{id:2,name:"Vue",icon:"mingcute:vue-line",slug:"vuejs"},{id:3,name:"开发杂记",icon:"material-symbols:code-rounded",slug:"dev-notes"}],i=e;export{i as c};
