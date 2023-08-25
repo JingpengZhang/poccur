@@ -749,7 +749,8 @@
   padding: 0;
   margin: 0;
   overflow: visible;
-  line-height: inherit;
+  /* line-height: inherit; */
+  line-height: 24px;
   word-wrap: normal;
   background-color: transparent;
   border: 0;
